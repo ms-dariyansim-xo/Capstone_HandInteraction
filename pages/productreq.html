@@ -10,33 +10,111 @@
 </head>
 
 <style>
-    
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    background-color: black;
+}
+
+.nav{
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+.header{
+    padding: 30px;
+    text-align: center;
+    background: pink;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.container{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+
+}
 </style>
 
 <body>
-    <div class="nav">
-        <a href="index.html">Main Page</a>
-        <a href="designdoc.html">Design Documentations</a>
-    </div>
+    
 
     <div class="header">
+        <div class="nav">
+            <a href="index.html">Main Page</a>
+            <a href="designdoc.html">Design Documentations</a>
+        </div>
+
         <h2>Product Requirments</h2>
         <p>Things to include:</p>
-        <p>ROLES AND RESPONSIBLLITIES: Product Owner, team members and stakeholders.</p>
-        <p>TEAM GOALS AND BUSINESS OBJECTIVES: Define most imp. goals in short point form.</p>
-        <p>BACKGROUND AND STRATEGIC FIT: Brieft explanation of strateic aim of actions.
-            Why build the product? How actions affect prod. developments and align with company's goals?
-        </p>
-        <p>ASSUMPTIONS: List of technical or business assumptions.</p>
-        <p>USER STORIES: List or link user stories that are required for proj.
-            User story is a doc written from POV of person using your software prod.
-            [use theories?]
-        </p>
-        <p>ACCEPTANCE CRITERIA: Conditions that indicate a user story is completed.</p>
-        <p>USER INTERACTION AND DESIGN: Link the design explorations and wireframes to page.</p>
-        <p>QUESTIONS: Record all questions and track them. [use forms and prev. history below content. ?]</p>
-        <p>NOT DOING: List things which aren't doing now but plan to.</p>
+        <p>ROLES AND RESPONSIBILITIES, TEAM GOALS AND BUSINESS OBJECTIVES, BACKGROUND AND STRATEGIC FIT, USER STORIES, ACCEPTANCE CRITERIA,USER INTERACTION AND DESIGN:QUESTIONS,NOT DOING.</p>
+        </div>
 
+
+        <div class="container">
+            <div class="card">
+                <h4>ROLES AND RESPONSIBILITIES:</h4>
+                <p>Product Owner, team members and stakeholders.</p>
+    
+            </div>
+
+            <div class="card">
+                <h4>TEAM GOALS AND BUSINESS OBJECTIVES:</h4>
+                <p>Define most imp. goals in short point form.</p>
+            </p>
+            </div>
+
+            <div class="card">
+                <h4>BACKGROUND AND STRATEGIC FIT:</h4>
+                <p>Why build the product? How actions affect prod. developments and align with company's goals?
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card">
+                <h4>USER STORIES:</h4>
+                <p>List or link user stories that are required for proj.
+                    User story is a doc written from POV of person using your software prod.</p>
+    
+            </div>
+
+            <div class="card">
+                <h4>ACCEPTANCE CRITERIA:</h4>
+                <p>Conditions that indicate a user story is completed.</p>
+            </p>
+            </div>
+
+            <div class="card">
+                <h4>USER INTERACTION AND DESIGN:</h4>
+                <p> Link the design explorations and wireframes to page.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <h4>QUESTIONS:</h4>
+                <p>Record all questions and track them. [use forms and prev. history below content. ?]</p>
+    
+            </div>
+
+            <div class="card">
+                <h4>NOT DOING:</h4>
+                <p>Define most imp. goals in short point form.</p>
+            </p>
+            </div>
+        </div>
 
     </div>
     
