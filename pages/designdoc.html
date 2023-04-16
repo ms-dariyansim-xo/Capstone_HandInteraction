@@ -26,13 +26,22 @@ body{
     background-color: black;
     color:white;
     padding: 10px;
+    border-radius: 5px;
 }
 
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
 
+.nav a:visited{
+    color: salmon;
+}
 .header{
     padding: 30px;
     text-align: center;
-    background: pink;
+    background: salmon;
+    border-radius: 5px;
 }
 
 .row::after{
@@ -42,6 +51,8 @@ body{
 }
 
 .card{
+    border: 1px solid black;
+    border-radius: 5px;
     background-color: white;
     padding: 10px;
     margin-top: 20px;
@@ -50,15 +61,17 @@ body{
 .leftcolumn{
     float: left;
     width: 25%;
-    background-color: pink;
+    background-color: salmon;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .rightcolumn{
     float: right;
     width: 75%;
     padding: 10px;
+    
 }
 
 @media screen and (max-width: 800px){

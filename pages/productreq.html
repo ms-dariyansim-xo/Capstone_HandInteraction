@@ -26,11 +26,23 @@ body{
     background-color: black;
     color:white;
     padding: 10px;
+    border-radius: 5px;
 }
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.nav a:visited{
+    color: white;
+}
+
 .header{
     padding: 30px;
     text-align: center;
     background: salmon;
+    border-radius: 5px;
 }
 
 .card{
@@ -38,8 +50,15 @@ body{
     width: 33.33%;
     padding: 20px;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
+    border-left: 2px solid salmon;
+    border-right: 2px solid salmon;
+    border-radius: 10px;
+}
+
+.container{
+    padding: 10px;
 }
 
 .container::after{
@@ -57,6 +76,22 @@ body{
             width: 100%;
         }
 }
+
+/* For tables used in applied subject. */
+#table{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#table th{
+    background-color:gray;
+}
+
+#table tr:hover{
+    background-color:gray;
+}
+
+
 </style>
 
 <body>
@@ -100,9 +135,19 @@ body{
                 <p>List or link user stories that are required for proj.
                     User story is a doc written from POV of person using your software prod.</p>
                 
-                <table id="userstories-table">
+                <table id="table">
                     <tr>
-                        <th></th>
+                        <th>User</th>
+                        <th>Stories/Details</th>
+                    </tr>
+
+                    <tr>
+                        <td>User Sample 1</td>
+                        <td>Sample 1 story and comment</td>
+                    </tr>
+                    <tr>
+                        <td>User Sample 2</td>
+                        <td>Sample 2 story and comment</td>
                     </tr>
                 </table>
             </div>
