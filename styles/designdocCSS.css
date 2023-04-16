@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
@@ -7,7 +13,7 @@ body{
 .header{
     padding: 30px;
     text-align: center;
-    background: teal;
+    background: black;
 }
 
 .row::after{
@@ -17,6 +23,13 @@ body{
 }
 
 .leftcolumn{
+    float: left;
+    width: 25%;
+    background-color: pink;
+    padding-left: 25px;
+}
+
+.rightcolumn{
     float: left;
     width: 75%;
 }
