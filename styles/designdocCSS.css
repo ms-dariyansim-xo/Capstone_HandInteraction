@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    background-color: black;
+}
+
+.header{
+    padding: 30px;
+    text-align: center;
+    background: teal;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.leftcolumn{
+    float: left;
+    width: 75%;
+}
