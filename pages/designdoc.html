@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/reset.css" rel="stylesheet" >
-    <link href="/styles/designdocCSS.css" rel="stylesheet" >
+    <!-- <link href="/styles/reset.css" rel="stylesheet" >
+    <link href="/styles/designdocCSS.css" rel="stylesheet" > -->
     <title>Design Documentation</title>
 </head>
 
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    background-color: black;
+}
+
+.nav{
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+
+
+.header{
+    padding: 30px;
+    text-align: center;
+    background: pink;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.leftcolumn{
+    float: left;
+    width: 25%;
+    background-color: pink;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.rightcolumn{
+    float: right;
+    width: 75%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .leftcolumn, .rightcolumn{
+        width: 100%;
+        padding:0;
+    }
+}
+</style>
+
 <body>
 
-    <div class="nav">
-        <a href="index.html">Main Page</a>
-        <a href="productreq.html">Production Requirements</a>
-    </div>
+    
 
     <div class="header">
+        <div class="nav">
+            <a href="index.html">Main Page</a>
+            <a href="productreq.html">Production Requirements</a>
+        </div>
+
         <h2>Design Documentation</h2>
         <p>Things to include:</p>
         <p>Title, authors and reviewers. Functional description. User interface.
@@ -48,8 +110,8 @@
                 <p>Solutions to Topic One.</p>
             </div>
 
+            
         </div>
-
 
         <div class="leftcolumn">
            
@@ -68,6 +130,18 @@
            </div>
 
 
+        </div>
+
+        <div class="leftcolumn">
+            <div class="card">
+                <h3>USER INTERFACE</h3> 
+                <p>Description.</p>
+             </div>
+ 
+             <div class="card">
+                 <h3>PRIORITIZAION</h3> 
+                 <p>Details.</p>
+              </div>
         </div>
     </div>
 
