@@ -17,13 +17,14 @@
 }
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 5px;
-    background-color: black;
+    background-color: rgb(142, 114, 78);
 }
 
 .nav{
-    background-color: black;
+    text-align: center;
+    background-color: rgb(255, 133, 126);
     color:white;
     padding: 10px;
     border-radius: 5px;
@@ -31,25 +32,22 @@ body{
 
 .nav a:hover{
     background-color: white;
-    color: black;
+    color: rgb(255, 133, 126);
 }
 
 .nav a:visited{
-    color: white;
+    color: black;
 }
 
 .header{
+    text-align: center;
     margin: auto;
     padding: 30px;
-    text-align: center;
-    background: salmon;
-    border-radius: 5px;
     width: 75%;
 }
 
 .card{
-    float: left;
-    width: 33.33%;
+    /* float: left; */
     padding: 20px;
     background-color: white;
     padding: 20px;
@@ -60,16 +58,18 @@ body{
 }
 
 .container{
-    padding: 10px;
+    width: 85%;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 75% 25%;
 }
 
 .container::after{
     content: "";
     display: table;
     clear: both;
-    /* align-content: center;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%; */
 
 }
 
@@ -82,11 +82,10 @@ body{
 /* For tables used in applied subject. */
 #table{
     border: 1px solid black;
-    padding: 10px;
 }
 
 #table th{
-    background-color:gray;
+    background-color:teal;
 }
 
 #table tr:hover{
@@ -108,38 +107,39 @@ body{
         <h1>Hand Interaction Product Requirements</h1>
         <h4>Created by Dariyan Sim</h4>
 
-        <div class="container">
-            <div class="card">
-                <table id="table">
-                    <tr>
-                        <td><b>Target release</b></td>
-                        <td>1.0</td>
-                    </tr>
+        
+    </div>
 
-                    <tr>                        
-                        <td><b>Epic</b></td>
-                        <td>(no details yet)</td>
-                    </tr>
-                    <tr>
-                        <td><b>Document status</b></td>
-                        <td>DRAFT</td>
-                    </tr>
-                    <tr>
-                        <td><b>Document owner</b></td>
-                        <td>Dariyan Sim</td>
-                    </tr>
+    <div class="container1">
+        <div class="card">
+            <table id="table">
+                <tr>
+                    <td><b>Target release</b></td>
+                    <td>1.0</td>
+                </tr>
 
-                    <tr>                        
-                        <td><b>Designer(s)</b></td>
-                        <td>Sample designer, Dariyan Sim</td>
-                    </tr>
-                    <tr>
-                        <td><b>Developer(s)</b></td>
-                        <td>Sample developer, Dariyan Sim</td>
-                    </tr>
-                </table>
-    
-            </div>
+                <tr>                        
+                    <td><b>Epic</b></td>
+                    <td>(no details yet)</td>
+                </tr>
+                <tr>
+                    <td><b>Document status</b></td>
+                    <td>DRAFT</td>
+                </tr>
+                <tr>
+                    <td><b>Document owner</b></td>
+                    <td>Dariyan Sim</td>
+                </tr>
+
+                <tr>                        
+                    <td><b>Designer(s)</b></td>
+                    <td>Sample designer, Dariyan Sim</td>
+                </tr>
+                <tr>
+                    <td><b>Developer(s)</b></td>
+                    <td>Sample developer, Dariyan Sim</td>
+                </tr>
+            </table>
 
             <div class="card">
                 <h4>TEAM GOALS AND BUSINESS OBJECTIVES:</h4>
@@ -147,70 +147,73 @@ body{
             </p>
             </div>
 
-            <div class="card">
-                <h4>BACKGROUND AND STRATEGIC FIT:</h4>
-                <p>Why build the product? How actions affect prod. developments and align with company's goals?
-                </p>
-            </div>
         </div>
-        
-        <div class="container">
-            <div class="card">
-                <h4>USER STORIES:</h4>
-                <p>List or link user stories that are required for proj.
-                    User story is a doc written from POV of person using your software prod.</p>
-                
-                <table id="table">
-                    <tr>
-                        <th>#</th>
-                        <th>Story Title (by users)</th>
-                        <th>Description</th>
-                        <th>Priority</th>
-                        <th>Notes</th>
-                    </tr>
 
-                    <tr>
-                        <td>1</td>
-                        <td>Mobile Application</td>
-                        <td>A user wants application on mobile devices.</td>
-                        <td>Must Have</td>
-                        <td>Sample notes.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Sample 2 story and comment</td>
-                    </tr>
-                </table>
-            </div>
+        <div class="card">
+            <h4>BACKGROUND AND STRATEGIC FIT:</h4>
+            <p>Why build the product? How actions affect prod. developments and align with company's goals?
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <div class="card">
+            <h4>USER STORIES:</h4>
+            <p>List or link user stories that are required for proj.
+                User story is a doc written from POV of person using your software prod.</p>
+            
+            <table id="table">
+                <tr>
+                    <th>#</th>
+                    <th>Story Title (by users)</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Notes</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Mobile Application</td>
+                    <td>A user wants application on mobile devices.</td>
+                    <td>Must Have</td>
+                    <td>Sample notes.</td>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sample 2 story and comment</td>
+                </tr>
+            </table>
 
             <div class="card">
                 <h4>ACCEPTANCE CRITERIA:</h4>
                 <p>Conditions that indicate a user story is completed.</p>
             </p>
             </div>
-
-            <div class="card">
-                <h4>USER INTERACTION AND DESIGN:</h4>
-                <p> Link the design explorations and wireframes to page.</p>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="card">
-                <h4>QUESTIONS:</h4>
-                <p>Record all questions and track them. [use forms and prev. history below content. ?]</p>
-    
-            </div>
-
-            <div class="card">
-                <h4>NOT DOING:</h4>
-                <p>Define most imp. goals in short point form.</p>
-            </p>
-            </div>
-        </div>
-
+        </div>        
     </div>
+
+    <div class="container">
+        <div class="card">
+            <h4>USER INTERACTION AND DESIGN:</h4>
+            <p> Link the design explorations and wireframes to page.</p>
+        </div>
+
+        <h4>QUESTIONS:</h4>
+        <p>Record all questions and track them. [use forms and prev. history below content. ?]</p>
+
+
+
+
+        <h4>NOT DOING:</h4>
+        <p>Define most imp. goals in short point form.</p>
+    </div>
+
+  
+        
+
+
     
 </body>
 </html>
