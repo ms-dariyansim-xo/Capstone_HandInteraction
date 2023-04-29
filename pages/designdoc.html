@@ -81,6 +81,19 @@ body{
         padding:0;
     }
 }
+/* For tables used in applied subject. */
+#table{
+    border: 1px solid black;
+    width: 85%;
+}
+
+#table th{
+    background-color:plum;
+}
+
+#table tr:hover{
+    background-color:whitesmoke;
+}
 </style>
 
 <body>
@@ -110,7 +123,28 @@ body{
 
             <div class="card">
                 <h4>TIMELINE</h4>
-                <p>COUNT DOWN picture.</p>
+                <H3>Weekly Agenda</H3>
+                <table id="table">
+
+                    <tr>
+                        <th>Week #:</th>
+                        <th>Need to accomplish:</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>Production requirements and Design Documentations need to be completed.</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>What is needed to achieve motion detection and will that be successful with current programming language(s).</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>Create and establish layout before diving deeper in programming.</th>
+                    </tr>
+                    
+
+                </table>
                 
             </div>
 
