@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    background-color: lightslategray;
+    padding: 30px;
+}
+.nav {
+    background-color: whitesmoke;
+    padding: 15px;
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.nav a{
+    color: black;
+}
+.nav ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.main{
+    background-color: black;
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+section::after{
+    content:"";
+display:table;
+clear:both;
+}
+
+.footer{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    color: lightslategray;
+}
+
+/* .videocontent{
+
+} */
+
+@media only screen and (max-width: 620px){
+    /*Ideally use this for mobile phones*/
+    .header, .nav, .main, .footer{
+        width: 100%;
+        height: auto;
+    }
+}
