@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: white;
+
+}
+
+nav{
+    padding: 5px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 5px red;
+    background-color: white;
+    position: static;
+    top: 0;    
+}
