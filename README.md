@@ -2,6 +2,10 @@
 
 https://ms-dariyansim-xo.github.io/Capstone_HandInteraction/pages/index.html
 
+<!--Prior Notes: Discuss what prompt this concept and how effectively this correlates to
+my visions and goals in AI, especially ML and DL and this project focuses on Deep Learning
+and deep algorithms. Ideal for heavy datasets. Neural networks with DL makes sense
+for Hand Interaction, requires many layers for functionalities to be successful.-->
 
 <!--Codes not yet executed as another repo has been created for practice and trials, did not want to
 prolong confusion with the utilization of Node.js, as it cannot be used as database (as intented) WITHOUT

@@ -1,14 +1,42 @@
 body{
     background-color: black;
     color: white;
+    cursor: crosshair
 
 }
 
+
+
 nav{
-    padding: 5px 2%;
+    padding: 10px 2%;
     justify-content: space-between;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 15px blue;
     background-color: white;
     position: static;
     top: 0;    
+}
+
+.sidebar{
+    
+}
+
+.main{
+    background-color: black;
+    float: left;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+.nav-middle img{
+    width: 300px;
+}
+
+.nav-right img{
+    margin-right: 25px;
 }

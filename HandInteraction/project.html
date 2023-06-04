@@ -1,4 +1,4 @@
-><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,21 +13,46 @@
 
     <!--Using Semantic Elements within HTML.-->
     <!--Creating nav section and work my way down.-->
-    <nav>
-        <!--Banner/Icon for (working title)-->
-        <nav class="nav-left"></nav>
-        <!--Banner style in gif. "ASL" or Welcome message-->
-        <div class="nav-middle"></div>
+    <nav class="flex-div">
 
         <!--User Profile Icon, Settings, FAQ-->
-        <div class="nav-right">
+        <div class="nav-left">
             <img src="images/profile-favicon.ico">
             <img src="images/settings-favicon.ico">
-            <img src="images/qa-favicon.ico">
+            <img src="images/qa-favicon.ico">            
+        </div>
+
+        <!--Banner style in gif. "ASL" or Welcome message-->
+        <div class="nav-middle">            
+            <!--Creating a section for SEARCH function to choose category-->
+    <div class="main">
+        <input placeholder="Search by Category" id="search-input">
+        <button id="search-btn">SEARCH</button>
+    </div>
+            
+
+        </div>
+
+        <!--Quick view of user profile/management?-->
+        <div class="nav-right">
+            <img src="images/placeholder.jpg">
         </div>
 
     </nav>
 
     
+
+    <div class="sidebar">
+        <div class="category">
+            <a href=""><img src=""><p>Alphabet</p></a>
+            <a href=""><img src=""><p>Animals</p></a>
+            <a href=""><img src=""><p>Colors</p></a>
+            <a href=""><img src=""><p>Family</p></a>
+            <a href=""><img src=""><p>Numbers</p></a>
+            <a href=""><img src=""><p>Occupation</p></a>
+        </div>
+    </div>
+
+    <script src="projectjs.js"></script>
 </body>
 </html>
