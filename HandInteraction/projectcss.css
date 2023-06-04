@@ -1,31 +1,40 @@
 body{
-    background-color: black;
-    color: white;
+    background-color: #cfdbd5;
+    color: black;
     cursor: crosshair
 
 }
 
-
-
 nav{
     padding: 10px 2%;
     justify-content: space-between;
-    box-shadow: 0 0 15px blue;
-    background-color: white;
-    position: static;
-    top: 0;    
+    box-shadow: 0 0 30px white;
+    background-color: #333533;
+    border-style: outset;   
 }
 
 .sidebar{
-    
+    background-color: #f5cb5c;
+    width: 20%;
+    padding: 15px;
+    height: 100vh;
+    border: outset;
 }
 
 .main{
-    background-color: black;
-    float: left;
+    background-color: #f5cb5c;
+    float: right;
     width: 70%;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+    height: 100vh;        
+    border-style: outset;
+}
+
+.video-content{
+    text-align: center;
+    height: 500px;
+    background-color: #333533;
 }
 
 .flex-div{
@@ -35,8 +44,23 @@ nav{
 
 .nav-middle img{
     width: 300px;
+    box-shadow: 0 0 30px #f5cb5c;
 }
 
 .nav-right img{
     margin-right: 25px;
+    box-shadow: 0 0 30px #f5cb5c;
+    position: static;
+}
+
+
+
+
+
+@media only screen and (max-width: 620px){
+    /*Ideally use this for mobile phones*/
+    .nav, .main, .sidebar{
+        width: 100%;
+        height: auto;
+    }
 }
