@@ -6,6 +6,7 @@ body{
 }
 
 nav{
+    border-radius: 20px;
     padding: 10px 2%;
     justify-content: space-between;
     box-shadow: 0 0 30px white;
@@ -13,7 +14,12 @@ nav{
     border-style: outset;   
 }
 
+a:visited{
+    color: white;
+}
+
 .sidebar{
+    border-radius: 10px;
     background-color: #f5cb5c;
     width: 20%;
     padding: 15px;
@@ -21,7 +27,13 @@ nav{
     border: outset;
 }
 
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #333533;
+}
+
 .main{
+    border-radius: 10px;
     background-color: #f5cb5c;
     float: right;
     width: 70%;
@@ -32,9 +44,11 @@ nav{
 }
 
 .video-content{
+    border-radius: 20px;
     text-align: center;
     height: 500px;
-    background-color: #333533;
+    background-color: #333533;    
+    border: 2px solid white;
 }
 
 .flex-div{
