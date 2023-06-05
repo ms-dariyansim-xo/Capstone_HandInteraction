@@ -27,6 +27,30 @@ a:visited{
     border: outset;
 }
 
+.category{
+    width: 20%;
+
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-list{
+    padding: 10px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-list a{
+    display: block;
+}
+
+.dropdown:hover .dropdown-list {
+    display:block;
+}
+
 table, th, td{
     border-collapse: collapse;
     border: 1px solid #333533;
