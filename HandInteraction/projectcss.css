@@ -6,6 +6,8 @@ body{
 }
 
 nav{
+    width: 70%;
+    margin: 0 auto;
     border-radius: 20px;
     padding: 10px 2%;
     justify-content: space-between;
@@ -21,10 +23,10 @@ a:visited{
 .sidebar{
     border-radius: 10px;
     background-color: #f5cb5c;
-    width: 20%;
     padding: 15px;
-    height: 100vh;
+    height: 95vh;
     border: outset;
+    float: right;
 }
 
 .category{
@@ -58,19 +60,18 @@ table, th, td{
 
 .main{
     border-radius: 10px;
+    height: 100vh;
     background-color: #f5cb5c;
-    float: right;
-    width: 70%;
+    width: 80%;
     padding: 15px;
-    text-align: center;
-    height: 100vh;        
+    text-align: center;      
     border-style: outset;
+    margin: 0 auto;
 }
 
 .video-content{
-    border-radius: 20px;
-    text-align: center;
-    height: 500px;
+    width: calc(100% - 250px);
+    border-radius: 20px;    
     background-color: #333533;    
     border: 2px solid white;
 }
