@@ -96,7 +96,7 @@ table, th, td{
 
 
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 600px){
     /*Ideally use this for mobile phones*/
     .nav, .main, .sidebar{
         width: 100%;
